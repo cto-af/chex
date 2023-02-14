@@ -3,3 +3,5 @@ pnpm-lock.yaml
 .eslintrc.cjs
 tsconfig.json
 test/
+coverage/
+ava.config.js
