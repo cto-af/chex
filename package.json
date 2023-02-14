@@ -1,0 +1,27 @@
+{
+  "name": "@cto.af/hexdump",
+  "version": "0.0.0",
+  "description": "hexdump -C as a small JS library",
+  "main": "lib/index.js",
+  "type": "module",
+  "bin": {
+    "chex": "bin/chex.js"
+  },
+  "scripts": {
+    "lint": "eslint . --ext js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Joe Hildebrand <joe-github@cursive.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "@cto.af/eslint-config": "1.0.3",
+    "@types/node": "18.13.0",
+    "eslint": "8.34.0",
+    "eslint-plugin-node": "11.1.0",
+    "typescript": "4.9.4"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
