@@ -1,0 +1,45 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: ['*']
+
+jobs:
+  build:
+
+    strategy:
+      matrix:
+        node-version: [16, 18, 19]
+        os: [ubuntu-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7.27.0
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Check coding standards
+        run: npm run lint
+      - name: Static analysis - check types
+        run: npm run ts
+      - name: Test with coverage
+        run: npm run coverage
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: coverage/lcov.info
+          env_vars: OS,NODE
+          name: codecov-umbrella
+          fail_ci_if_error: false
+          verbose: true

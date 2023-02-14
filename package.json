@@ -10,7 +10,8 @@
   "scripts": {
     "lint": "eslint . --ext js",
     "test": "c8 -r lcov ava",
-    "snaps": "ava --update-snapshots"
+    "snaps": "ava --update-snapshots",
+    "ts": "tsc"
   },
   "keywords": [],
   "author": "Joe Hildebrand <joe-github@cursive.net>",
