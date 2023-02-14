@@ -1,4 +1,4 @@
-import { hexDump } from '../lib/index.js'
+import {hexDump} from '../lib/index.js'
 // eslint-disable-next-line node/no-missing-import
 import test from 'ava'
 
