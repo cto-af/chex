@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "lint": "eslint . --ext js",
-    "test": "c8 -r lcov -x 'pkg/*/test/**' -x '*.js' ava",
-    "snaps": "ava --update-snapshots"
+    "test": "c8 ava",
+    "snaps": "c8 ava --update-snapshots",
+    "ts": "npm run ts --workspaces --if-present"
   },
   "keywords": [],
   "author": "Joe Hildebrand <joe-github@cursive.net>",
