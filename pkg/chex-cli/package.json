@@ -1,0 +1,24 @@
+{
+  "name": "@cto.af/chex-cli",
+  "version": "0.0.0",
+  "description": "hexdump -C as a small JS library",
+  "main": "lib/index.js",
+  "type": "module",
+  "bin": {
+    "chex": "bin/chex.js"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "Joe Hildebrand <joe-github@cursive.net>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "workspaces": [
+    "pkg/*"
+  ],
+  "dependencies": {
+    "@cto.af/chex": "workspace:*",
+    "commander": "10.0.0"
+  }
+}
