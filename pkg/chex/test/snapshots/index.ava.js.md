@@ -1,4 +1,4 @@
-# Snapshot report for `test/index.ava.js`
+# Snapshot report for `pkg/chex/test/index.ava.js`
 
 The actual snapshot is saved in `index.ava.js.snap`.
 

@@ -1,16 +1,25 @@
 // Keep this completely dependency-free modernish (ES2020) web-runnable code.
 
 const charMap = '␀␁␂␃␄␅␆␇␈␉␊␋␌␍␎␏␐␑␒␓␔␕␖␗␘␙␚␛␜␝␞␟ !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~␡.................................¡¢£¤¥¦§¨©ª«¬.®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ'
-const utf8Map = '.................................................. !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~.'
+const utf8Map = '................................ !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~.'
 const dotMap = utf8Map.padEnd(256, '.')
+
+// Is the runtime encoding little-endian?
+const LITTLE = new Uint16Array(new Uint8Array([1, 2]).buffer)[0] === 0x0201
 
 function style(str, color) {
   return `\x1B[${color}m${str}\x1B[39m`
 }
 
+/* eslint-disable max-len */
 /**
- * @typedef {"utf8"} SupportedEncoding
+ * @typedef {Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | BigUint64Array | Float32Array | Float64Array} TypedArray
  */
+
+/**
+ * @typedef {'utf8' | 'utf16' | 'utf-16' | 'utf16le' | 'utf-16le' | 'utf16be' | 'utf-16be'} SupportedEncoding
+ */
+/* eslint-enable max-len */
 
 /**
  * @typedef {object} HexOptions
@@ -23,12 +32,6 @@ function style(str, color) {
 /**
  * @typedef {Required<HexOptions>} ProcessedHexOptions
  */
-
-/* eslint-disable max-len */
-/**
- * @typedef {Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | BigUint64Array | Float32Array | Float64Array} TypedArray
- */
-/* eslint-enable max-len */
 
 /**
  * @param {any} a
@@ -66,15 +69,15 @@ function toUint8Array(buf, opts) {
     return new Uint8Array(buf)
   }
   if (typeof buf === 'string') {
-    if (['utf8', 'utf-8'].indexOf(opts.encoding.toLocaleLowerCase()) >= 0) {
-      const enc = new TextEncoder()
-      return enc.encode(buf)
-    }
-    if (['utf16', 'utf-16', 'utf16le', 'utf-16le'].indexOf(opts.encoding.toLocaleLowerCase()) >= 0) {
-      return utf16encode(buf, true)
-    }
-    if (['utf16be', 'utf-16be'].indexOf(opts.encoding.toLocaleLowerCase()) >= 0) {
-      return utf16encode(buf, false)
+    const m = opts.encoding.match(/^utf-?(?:(?<eight>8)|(?:16-?(?<endian>be|le)?))$/i)
+    if (m) {
+      if (m.groups.eight) {
+        return new TextEncoder().encode(buf)
+      }
+      const little = m.groups.endian ?
+        (m.groups.endian.toLowerCase() === 'le') :
+        LITTLE
+      return utf16encode(buf, little)
     }
     throw new Error(`Unknown string encoding "${opts.encoding}"`)
   }
