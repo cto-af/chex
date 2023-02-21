@@ -1,16 +1,20 @@
 #!/usr/bin/env node
 /* eslint-disable no-console */
 
+import {Command, Option} from 'commander'
 import {Buffer} from 'buffer'
-import {Command} from 'commander'
 import fs from 'fs/promises'
 import {hexDump} from '@cto.af/chex'
 
 const program = new Command()
 program
-  .argument('[file...]', 'File names to read or "-" for stdin')
-  .option('-c,--colors', 'Force colors on even if stdout is not a tty')
-  .option('-d,--dots', 'Use dots for more control characters, instead of Unicode representations')
+  .argument('[file...]', 'file names to read or "-" for stdin')
+  .option('-c,--colors', 'force colors on even if stdout is not a tty')
+  .option('-d,--dots', 'use dots for more control characters, instead of Unicode representations')
+  .addOption(new Option(
+    '-s,--strings <encoding>',
+    'try to decode strings in this encoding'
+  ).choices(['utf8', 'utf-8']))
   .parse()
 
 const opts = program.opts()
@@ -39,6 +43,7 @@ async function main(argv) {
     console.log(hexDump(buf, {
       colors: opts.colors || process.stdout.isTTY,
       dots: opts.dots,
+      decode: opts.strings,
     }))
   }
 }
