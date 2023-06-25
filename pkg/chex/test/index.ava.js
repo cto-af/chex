@@ -1,5 +1,5 @@
 import {hexDump} from '../lib/index.js'
-// eslint-disable-next-line node/no-missing-import
+// eslint-disable-next-line n/no-extraneous-import
 import test from 'ava'
 
 test('defaults', t => {
