@@ -26,7 +26,6 @@
     "eslint": "8.57.0",
     "typescript": "5.5.2"
   },
-  "workspaces": ["pkg/*"],
   "packageManager": "pnpm@9.4.0",
   "engines": {
     "node": ">=18"
