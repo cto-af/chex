@@ -1,7 +1,0 @@
-lockfileVersion: 5.4
-
-specifiers:
-  '@cto.af/chex': link:../chex
-
-dependencies:
-  '@cto.af/chex': link:../chex

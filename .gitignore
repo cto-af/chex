@@ -1,8 +1,5 @@
-node_modules/
-*.d.ts
-coverage/
-
-
-
 .nx/cache
 .nx/workspace-data
+*.d.ts
+coverage/
+node_modules/

@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "test": "c8 ava",
     "snaps": "c8 ava --update-snapshots",
-    "build": "npm run build --workspaces --if-present"
+    "build": "nx run-many -t build"
   },
   "keywords": [
     "hexdump",
