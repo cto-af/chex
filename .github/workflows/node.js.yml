@@ -40,5 +40,6 @@ jobs:
           files: coverage/lcov.info
           env_vars: OS,NODE
           name: codecov-umbrella
+          token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: false
           verbose: true
