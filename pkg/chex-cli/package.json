@@ -8,8 +8,8 @@
     "chex": "bin/chex.js"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/cto-af/chex.git",
+    "type": "git",
+    "url": "https://github.com/cto-af/chex.git",
     "directory": "pkg/chex-cli"
   },
   "keywords": [
