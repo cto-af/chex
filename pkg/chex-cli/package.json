@@ -7,18 +7,24 @@
   "bin": {
     "chex": "bin/chex.js"
   },
-  "scripts": {},
-  "keywords": [],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/cto-af/chex.git",
+    "directory": "pkg/chex-cli"
+  },
+  "keywords": [
+    "hexdump",
+    "hex",
+    "unicode",
+    "cli"
+  ],
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
-  "engines": {
-    "node": ">=16"
-  },
-  "workspaces": [
-    "pkg/*"
-  ],
   "dependencies": {
     "@cto.af/chex": "workspace:*",
     "commander": "12.1.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
