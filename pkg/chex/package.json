@@ -4,12 +4,21 @@
   "description": "hexdump -C as a small JS library",
   "main": "lib/index.js",
   "type": "module",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/cto-af/chex.git",
+    "directory": "pkg/chex"
+  },
   "scripts": {
     "test": "c8 -r lcov ava",
     "snaps": "ava --update-snapshots",
-    "ts": "tsc"
+    "build": "tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "hexdump",
+    "hex",
+    "unicode"
+  ],
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
   "devDependencies": {
@@ -17,9 +26,6 @@
     "typescript": "5.5.2"
   },
   "engines": {
-    "node": ">=16"
-  },
-  "workspaces": [
-    "pkg/*"
-  ]
+    "node": ">=18"
+  }
 }

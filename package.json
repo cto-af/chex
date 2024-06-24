@@ -4,13 +4,18 @@
   "description": "hexdump -C as a small JS library",
   "private": "true",
   "type": "module",
+  "repository": "cto-af/chex",
   "scripts": {
     "lint": "eslint .",
     "test": "c8 ava",
     "snaps": "c8 ava --update-snapshots",
-    "build": "npm run ts --workspaces --if-present"
+    "build": "npm run build --workspaces --if-present"
   },
-  "keywords": [],
+  "keywords": [
+    "hexdump",
+    "hex",
+    "unicode"
+  ],
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
   "devDependencies": {
