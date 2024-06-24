@@ -36,3 +36,13 @@ test('dots', t => {
 test('colors', t => {
   t.snapshot(hexDump('0\n1', {colors: true}));
 });
+
+test('decode', t => {
+  const te = new TextEncoder();
+  const poo = te.encode('\u{1F4A9}');
+  t.snapshot(hexDump(poo, {decode: true}), '\u{1F4A9}');
+
+  // Get continuation msg
+  const oo = new Uint8Array([0x9F, 0x92, 0xA9, 0x61]);
+  t.snapshot(hexDump(oo, {decode: true}), '..a');
+});

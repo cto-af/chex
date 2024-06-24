@@ -1,5 +1,5 @@
 {
-  "reporter": "lcov",
+  "reporter": ["text", "lcov"],
   "exclude": [
     "pkg/*/test/**",
     "*.js"
