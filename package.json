@@ -1,10 +1,13 @@
 {
   "name": "@cto.af/chex-monorepo",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "hexdump -C as a small JS library",
   "private": "true",
   "type": "module",
-  "repository": "cto-af/chex",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cto-af/chex.git"
+  },
   "scripts": {
     "lint": "eslint .",
     "test": "c8 ava",
@@ -19,16 +22,17 @@
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
   "devDependencies": {
-    "@cto.af/eslint-config": "4.0.2",
-    "@types/node": "20.14.8",
+    "@cto.af/eslint-config": "5.0.0",
+    "@types/node": "22.7.5",
     "ava": "6.1.3",
     "c8": "10.1.2",
-    "eslint": "8.57.0",
-    "typescript": "5.5.2"
+    "eslint": "9.12.0",
+    "eslint-plugin-ava": "15.0.1",
+    "eslint-plugin-n": "17.11.1",
+    "typescript": "5.6.3"
   },
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.12.1",
   "engines": {
     "node": ">=18"
-  },
-  "dependencies": {}
+  }
 }

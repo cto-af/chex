@@ -2,8 +2,8 @@
 /* eslint-disable no-console */
 
 import {Command, Option} from 'commander';
-import {Buffer} from 'buffer';
-import fs from 'fs/promises';
+import {Buffer} from 'node:buffer';
+import fs from 'node:fs/promises';
 import {hexDump} from '@cto.af/chex';
 
 const program = new Command();
