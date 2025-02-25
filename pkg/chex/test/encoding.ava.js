@@ -1,5 +1,4 @@
 /* eslint-disable @stylistic/array-element-newline */
-// eslint-disable-next-line n/no-extraneous-import
 import test from 'ava';
 import {utf8decode} from '../lib/encoding.js';
 

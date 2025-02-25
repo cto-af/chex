@@ -2,7 +2,6 @@ import {
   charMap, dotMap, parseEncoding, utf16encode, utf8decode,
 } from './encoding.js';
 
-/* eslint-disable max-len */
 /**
  * @typedef {Int8Array | Uint8Array | Uint8ClampedArray | Int16Array |
  *           Uint16Array | Int32Array | Uint32Array | BigUint64Array |
@@ -13,7 +12,6 @@ import {
  * @typedef {'utf8' | 'utf16' | 'utf-16' | 'utf16le' | 'utf-16le' |
  *           'utf16be' | 'utf-16be'} SupportedEncoding
  */
-/* eslint-enable max-len */
 
 /**
  * @typedef {object} HexOptions
