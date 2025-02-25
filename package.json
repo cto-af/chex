@@ -12,7 +12,8 @@
     "lint": "eslint .",
     "test": "c8 ava",
     "snaps": "c8 ava --update-snapshots",
-    "build": "pnpm --filter '@cto.af/*' --if-present -r build"
+    "build": "pnpm --filter '@cto.af/*' --if-present -r build",
+    "version": "monopub version"
   },
   "keywords": [
     "hexdump",
