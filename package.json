@@ -16,7 +16,7 @@
     "test": "c8 ava",
     "snaps": "c8 ava --update-snapshots",
     "build": "pnpm --filter '@cto.af/*' --if-present -r build",
-    "version": "monopub version && pnpm run --if-present -r version"
+    "version": "monopub version && pnpm run --sequential --if-present -r version"
   },
   "keywords": [
     "hexdump",
