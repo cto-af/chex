@@ -5,6 +5,8 @@ export default [
   {
     ignores: [
       '**/*.d.ts',
+      'node_modules/**',
+      '**/coverage/**',
     ],
   },
   ...es6,

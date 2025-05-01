@@ -26,7 +26,7 @@
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
   "devDependencies": {
-    "@cto.af/eslint-config": "6.0.1",
+    "@cto.af/eslint-config": "6.0.2",
     "@cto.af/monopub": "1.1.0",
     "@types/node": "22.15.3",
     "ava": "6.2.0",

@@ -16,8 +16,8 @@ importers:
         version: link:pkg/chex
     devDependencies:
       '@cto.af/eslint-config':
-        specifier: 6.0.1
-        version: 6.0.1(eslint@9.25.1)(typescript@5.8.3)
+        specifier: 6.0.2
+        version: 6.0.2(eslint@9.25.1)(typescript@5.8.3)
       '@cto.af/monopub':
         specifier: 1.1.0
         version: 1.1.0
@@ -71,8 +71,8 @@ packages:
     resolution: {integrity: sha512-6zABk/ECA/QYSCQ1NGiVwwbQerUCZ+TQbp64Q3AgmfNvurHH0j8TtXa1qbShXA6qqkpAj4V5W8pP6mLe1mcMqA==}
     engines: {node: '>=18'}
 
-  '@cto.af/eslint-config@6.0.1':
-    resolution: {integrity: sha512-CwIHYeOdsvHibujkrwSrYdBQ4EBEFLUXBKBEqLhxA5o4Cl38gJ6ljOi6oeIYFYtK5FPCEpeiyJF8689mfEAphw==}
+  '@cto.af/eslint-config@6.0.2':
+    resolution: {integrity: sha512-9mMqRonDch52l56gNc0ekRZjqxfFWtKJE24R3ynreFe3cAWzGTguTCE7do9VgFd0TGe+kOei1C65ac0cMu2mww==}
     engines: {node: '>=20'}
 
   '@cto.af/monopub@1.1.0':
@@ -1261,7 +1261,7 @@ snapshots:
 
   '@bcoe/v8-coverage@1.0.2': {}
 
-  '@cto.af/eslint-config@6.0.1(eslint@9.25.1)(typescript@5.8.3)':
+  '@cto.af/eslint-config@6.0.2(eslint@9.25.1)(typescript@5.8.3)':
     dependencies:
       '@eslint/json': 0.12.0
       '@stylistic/eslint-plugin': 4.2.0(eslint@9.25.1)(typescript@5.8.3)
