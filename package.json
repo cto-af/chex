@@ -4,6 +4,9 @@
   "description": "hexdump -C as a small JS library",
   "private": "true",
   "type": "module",
+  "workspaces": [
+    "./pkg/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cto-af/chex.git"
