@@ -1,6 +1,6 @@
 {
   "name": "@cto.af/chex-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "hexdump -C as a small JS library",
   "main": "lib/index.js",
   "type": "module",
@@ -25,6 +25,6 @@
     "commander": "13.1.0"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   }
 }
