@@ -2,6 +2,7 @@
   "reporter": ["text", "lcov"],
   "exclude": [
     "pkg/*/test/**",
-    "*.js"
+    "*.js",
+    "test/**"
   ]
 }

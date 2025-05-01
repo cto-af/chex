@@ -10,7 +10,7 @@
     "directory": "pkg/chex"
   },
   "scripts": {
-    "test": "c8 -r lcov ava",
+    "test": "c8 ava",
     "snaps": "ava --update-snapshots",
     "build": "tsc"
   },
