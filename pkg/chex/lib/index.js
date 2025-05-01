@@ -20,6 +20,8 @@ import {
  * @property {SupportedEncoding|null} [decode] Attempt to decode strings.
  * @property {SupportedEncoding} [encoding='utf8'] If the input is a string, how
  *   to decode it.
+ * @property {number} [firstByte=0] Number to use for the first byte.
+ * @property {boolean} [printLength=true] Print the total length at the end.
  */
 
 /**
@@ -122,6 +124,8 @@ export function hexDump(input, options) {
     dots: false,
     encoding: 'utf8',
     decode: null,
+    firstByte: 0,
+    printLength: true,
     ...options,
   };
   const buf = toUint8Array(input, opts);
@@ -137,7 +141,7 @@ export function hexDump(input, options) {
           ret += printableString(buf, offset - 16, len, opts);
           ret += '|\n';
         }
-        ret += offset.toString(16).padStart(8, '0');
+        ret += (opts.firstByte + offset).toString(16).padStart(8, '0');
       }
       if ((offset % 8) === 0) {
         ret += ' ';
@@ -162,7 +166,9 @@ export function hexDump(input, options) {
     ret += printableString(buf, start, len, opts);
     ret += '|\n';
   }
-  ret += buf.length.toString(16).padStart(8, '0');
-  ret += '\n';
+  if (opts.printLength) {
+    ret += (opts.firstByte + buf.length).toString(16).padStart(8, '0');
+    ret += '\n';
+  }
   return ret;
 }

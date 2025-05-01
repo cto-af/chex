@@ -20,9 +20,15 @@
   ],
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
+  "scripts": {
+    "test": "c8 ava"
+  },
   "dependencies": {
     "@cto.af/chex": "2.0.1",
     "commander": "13.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.3"
   },
   "engines": {
     "node": ">=20"
