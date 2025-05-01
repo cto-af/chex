@@ -4,6 +4,8 @@
 import {Command, Option} from 'commander';
 import {HexDumpTransform} from '../lib/stream.js';
 import fs from 'node:fs';
+import {version} from '../lib/version.js';
+import {version as libVersion} from '@cto.af/chex/lib/version.js';
 
 const program = new Command();
 program
@@ -14,6 +16,7 @@ program
     '-s,--strings <encoding>',
     'try to decode strings in this encoding'
   ).choices(['utf8', 'utf-8']))
+  .version(`${version}, lib:${libVersion}`)
   .parse();
 
 const opts = program.opts();

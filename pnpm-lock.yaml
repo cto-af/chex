@@ -36,9 +36,6 @@ importers:
       eslint-plugin-ava:
         specifier: 15.0.1
         version: 15.0.1(eslint@9.25.1)
-      eslint-plugin-n:
-        specifier: 17.17.0
-        version: 17.17.0(eslint@9.25.1)
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -48,6 +45,9 @@ importers:
       '@types/node':
         specifier: 22.15.3
         version: 22.15.3
+      package-extract:
+        specifier: 3.1.0
+        version: 3.1.0
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -64,6 +64,9 @@ importers:
       '@types/node':
         specifier: 22.15.3
         version: 22.15.3
+      package-extract:
+        specifier: 3.1.0
+        version: 3.1.0
 
 packages:
 
@@ -956,6 +959,11 @@ packages:
   package-config@5.0.0:
     resolution: {integrity: sha512-GYTTew2slBcYdvRHqjhwaaydVMvn/qrGC323+nKclYioNSLTDUM/lGgtGTgyHVtYcozb+XkE8CNhwcraOmZ9Mg==}
     engines: {node: '>=18'}
+
+  package-extract@3.1.0:
+    resolution: {integrity: sha512-QoyK/7ePGWaVXHqy6ZRqos/MKa0PCEsLX4pouP3JB5+0vRnNyIc0LaUh6ZqMly4ZL96iLHChFkVRAlcORPgw0w==}
+    engines: {node: '>=20'}
+    hasBin: true
 
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
@@ -2178,6 +2186,11 @@ snapshots:
     dependencies:
       find-up-simple: 1.0.1
       load-json-file: 7.0.1
+
+  package-extract@3.1.0:
+    dependencies:
+      commander: 13.1.0
+      semver: 7.7.1
 
   package-json-from-dist@1.0.1: {}
 
