@@ -1,2 +1,4 @@
 packages:
   - pkg/*
+overrides:
+  '@cto.af/chex': link:pkg/chex
