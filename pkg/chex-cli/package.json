@@ -1,6 +1,6 @@
 {
   "name": "@cto.af/chex-cli",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "hexdump -C as a small JS library",
   "main": "lib/index.js",
   "type": "module",
@@ -25,7 +25,7 @@
     "version": "package-extract -s -o lib/version.js && git add lib/version.js"
   },
   "dependencies": {
-    "@cto.af/chex": "2.0.1",
+    "@cto.af/chex": "2.1.0",
     "commander": "13.1.0"
   },
   "devDependencies": {
