@@ -1,6 +1,6 @@
 {
   "name": "@cto.af/chex-monorepo",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "hexdump -C as a small JS library",
   "private": "true",
   "type": "module",
