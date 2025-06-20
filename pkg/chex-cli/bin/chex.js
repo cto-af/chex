@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-/* eslint-disable no-console */
 
 import {Command, Option} from 'commander';
 import {HexDumpTransform} from '../lib/stream.js';

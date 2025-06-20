@@ -23,7 +23,7 @@
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "22.15.3",
+    "@types/node": "24.0.3",
     "package-extract": "3.1.0",
     "typescript": "5.8.3"
   },
