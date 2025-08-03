@@ -19,8 +19,8 @@ importers:
         specifier: 6.0.12
         version: 6.0.12(eslint@9.32.0)(typescript@5.9.2)
       '@cto.af/monopub':
-        specifier: 1.2.1
-        version: 1.2.1
+        specifier: 1.2.2
+        version: 1.2.2
       '@types/node':
         specifier: 24.1.0
         version: 24.1.0
@@ -78,8 +78,8 @@ packages:
     resolution: {integrity: sha512-oYAL/QiBae945VWkT0SD+PevNsVJClxgTklaBZvMRCLkrVre0+sR/PaNQ4mDFxpvR84LrV7dTWTRqMx2R5C51Q==}
     engines: {node: '>=20'}
 
-  '@cto.af/monopub@1.2.1':
-    resolution: {integrity: sha512-FJwWyz/rWFnNDhH4ICyE6shDZUHRPxvGpmGu2AJ5gGVjuyQpelhGtlJad5EZJvJfxpp/+aNg/rXTPL7J9X2gvA==}
+  '@cto.af/monopub@1.2.2':
+    resolution: {integrity: sha512-A4dPe8zPWNtDaBNFHKuGBJhNnMiKGsUzpEnQQBRYuM2QM4tbYG/vuBvF6Q4YGx0OuV6//nvlJsSctHunfgSqng==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -1233,7 +1233,7 @@ snapshots:
       - eslint
       - typescript
 
-  '@cto.af/monopub@1.2.1':
+  '@cto.af/monopub@1.2.2':
     dependencies:
       commander: 14.0.0
       fast-glob: 3.3.3
