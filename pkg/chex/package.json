@@ -1,6 +1,6 @@
 {
   "name": "@cto.af/chex",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "hexdump -C as a small JS library",
   "main": "lib/index.js",
   "type": "module",
