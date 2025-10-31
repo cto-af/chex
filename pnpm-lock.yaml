@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@cto.af/chex':
-        specifier: link:pkg/chex
-        version: link:pkg/chex
     devDependencies:
       '@cto.af/eslint-config':
         specifier: 6.1.0
