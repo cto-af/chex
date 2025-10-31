@@ -52,7 +52,7 @@ importers:
   pkg/chex-cli:
     dependencies:
       '@cto.af/chex':
-        specifier: 2.1.2
+        specifier: 2.2.0
         version: link:../chex
       commander:
         specifier: 14.0.2
