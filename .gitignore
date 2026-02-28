@@ -1,5 +1,4 @@
-.nx/cache
-.nx/workspace-data
+.pnpm-store/
 .vscode/
 *.d.ts
 coverage/

@@ -1,4 +1,4 @@
-# chex
+# chex-cli
 
 Like `hexdump -C`, but as a small JS library.
 
