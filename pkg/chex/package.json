@@ -29,8 +29,8 @@
     "@cto.af/utils": "1.4.1"
   },
   "devDependencies": {
-    "@types/node": "25.3.0",
-    "package-extract": "3.1.4",
+    "@types/node": "25.3.2",
+    "package-extract": "3.1.5",
     "typescript": "5.9.3"
   },
   "engines": {
