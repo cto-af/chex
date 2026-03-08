@@ -4,6 +4,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "dbaeumer.vscode-eslint",
         "editorconfig.editorconfig"
       ]
     }
