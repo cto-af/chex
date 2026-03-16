@@ -9,64 +9,64 @@ importers:
   .:
     devDependencies:
       '@cto.af/eslint-config':
-        specifier: 6.2.5
+        specifier: ^6.2.5
         version: 6.2.5(eslint@10.0.3)(typescript@5.9.3)
       '@cto.af/monopub':
-        specifier: 1.2.2
-        version: 1.2.2
+        specifier: ^1.2.4
+        version: 1.2.4
       '@types/node':
-        specifier: 25.3.5
-        version: 25.3.5
+        specifier: ^25.5.0
+        version: 25.5.0
       ava:
-        specifier: 7.0.0
+        specifier: ^7.0.0
         version: 7.0.0
       eslint:
-        specifier: 10.0.3
+        specifier: ^10.0.3
         version: 10.0.3
       eslint-plugin-ava:
-        specifier: 16.0.0
+        specifier: ^16.0.0
         version: 16.0.0(eslint@10.0.3)
       superc8:
-        specifier: ^12.2.4
-        version: 12.2.4
+        specifier: ^12.3.1
+        version: 12.3.1
       typescript:
-        specifier: 5.9.3
+        specifier: ^5.9.3
         version: 5.9.3
 
   pkg/chex:
     dependencies:
       '@cto.af/utils':
-        specifier: 1.4.2
+        specifier: ~1.4.2
         version: 1.4.2
     devDependencies:
       '@types/node':
-        specifier: 25.3.5
-        version: 25.3.5
+        specifier: ^25.5.0
+        version: 25.5.0
       package-extract:
-        specifier: 3.1.5
-        version: 3.1.5
+        specifier: ^3.1.6
+        version: 3.1.6
       typescript:
-        specifier: 5.9.3
+        specifier: ^5.9.3
         version: 5.9.3
 
   pkg/chex-cli:
     dependencies:
       '@cto.af/chex':
-        specifier: 2.2.3
+        specifier: ~2.2.3
         version: link:../chex
       commander:
-        specifier: 14.0.3
+        specifier: ~14.0.3
         version: 14.0.3
     devDependencies:
       '@types/node':
-        specifier: 25.3.5
-        version: 25.3.5
+        specifier: ^25.5.0
+        version: 25.5.0
       execa:
-        specifier: 9.6.1
+        specifier: ^9.6.1
         version: 9.6.1
       package-extract:
-        specifier: 3.1.5
-        version: 3.1.5
+        specifier: ^3.1.6
+        version: 3.1.6
 
 packages:
 
@@ -78,8 +78,8 @@ packages:
     resolution: {integrity: sha512-o0Pv/Tcdklmr+jXEn5WBjBReggaLo5BgSbgsQUCa+AB0glM33UJTxMi4TpbNEY+mc8IvY+1TUBLRZLRPFfXgBw==}
     engines: {node: '>=20'}
 
-  '@cto.af/monopub@1.2.2':
-    resolution: {integrity: sha512-A4dPe8zPWNtDaBNFHKuGBJhNnMiKGsUzpEnQQBRYuM2QM4tbYG/vuBvF6Q4YGx0OuV6//nvlJsSctHunfgSqng==}
+  '@cto.af/monopub@1.2.4':
+    resolution: {integrity: sha512-iLOfpJhfzHH3vbNXzh1X1WsJBz0P6ESoZjxtXUaDIijrW/GY1DZYtvDC+DpUdoJiQ/IugpGVxgF/UGC6ccSuOA==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -111,6 +111,10 @@ packages:
 
   '@eslint/json@1.0.1':
     resolution: {integrity: sha512-bE2nGv8/U+uRvQEJWOgCsZCa65XsCBgxyyx/sXtTHVv0kqdauACLzyp7A1C3yNn7pRaWjIt5acxY+TAbSyIJXw==}
+    engines: {node: ^20.19.0 || ^22.13.0 || >=24}
+
+  '@eslint/json@1.1.0':
+    resolution: {integrity: sha512-noH9FUYqyhZSDf3Yq5HswsjDH/MWJAatMooWwT5YgQ0XHMekoFc/iyEufP+7kD1kaOj9qwFiXySqHsKii3zmlw==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
   '@eslint/object-schema@3.0.3':
@@ -216,11 +220,11 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@25.3.5':
-    resolution: {integrity: sha512-oX8xrhvpiyRCQkG1MFchB09f+cXftgIXb3a7UUa4Y3wpmZPw5tyZGTLWhlESOLq1Rq6oDlc8npVU2/9xiCuXMA==}
+  '@types/node@25.5.0':
+    resolution: {integrity: sha512-jp2P3tQMSxWugkCUKLRPVUpGaL5MVFwF8RDuSRztfwgN1wmqJeMSbKlnEtQqU8UrhTmzEmZdu2I6v2dpp7XIxw==}
 
-  '@typescript-eslint/types@8.56.1':
-    resolution: {integrity: sha512-dbMkdIUkIkchgGDIv7KLUpa0Mda4IYjo4IAMJUZ+3xNoUXxMsk9YtKpTHSChRS85o+H9ftm51gsK1dZReY9CVw==}
+  '@typescript-eslint/types@8.57.1':
+    resolution: {integrity: sha512-S29BOBPJSFUiblEl6RzPPjJt6w25A6XsBqRVDt53tA/tlL8q7ceQNZHTjPeONt/3S7KRI4quk+yP9jK2WjBiPQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@vercel/nft@1.3.2':
@@ -349,10 +353,6 @@ packages:
   code-excerpt@4.0.0:
     resolution: {integrity: sha512-xxodCmBen3iy2i0WtAK8FlFNrRzjUqjRsMfho58xT/wvZU1YTM3fCnRjcy1gJPMepaRlgm/0e6w8SpWHpn3/cA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
-
-  commander@14.0.0:
-    resolution: {integrity: sha512-2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5YAS4PupsEQsDvP14FqhFr0P49CYDugi59xaxJlTXRA==}
-    engines: {node: '>=20'}
 
   commander@14.0.3:
     resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
@@ -580,12 +580,8 @@ packages:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
     engines: {node: '>=16'}
 
-  flatted@3.3.4:
-    resolution: {integrity: sha512-3+mMldrTAPdta5kjX2G2J7iX4zxtnwpdA8Tr2ZSjkyPSanvbZAcy6flmtnXbEybHrDcU9641lxrMfFuUxVz9vA==}
-
-  foreground-child@4.0.3:
-    resolution: {integrity: sha512-yeXZaNbCBGaT9giTpLPBdtedzjwhlJBUoL/R4BVQU5mn0TQXOHwVIl1Q2DMuBIdNno4ktA1abZ7dQFVxD6uHxw==}
-    engines: {node: '>=16'}
+  flatted@3.4.1:
+    resolution: {integrity: sha512-IxfVbRFVlV8V/yRaGzk0UVIcsKKHMSfYw66T/u4nTwlWteQePsxe//LjudR1AMX4tZW3WFCh3Zqa/sjlqpbURQ==}
 
   get-caller-file@2.0.5:
     resolution: {integrity: sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==}
@@ -764,8 +760,8 @@ packages:
   lodash@4.17.23:
     resolution: {integrity: sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==}
 
-  lru-cache@11.2.6:
-    resolution: {integrity: sha512-ESL2CrkS/2wTPfuend7Zhkzo2u0daGJ/A2VucJOgQ/C48S/zB8MMeMHSGKYpXhIjbPxfuezITkaBH1wqv00DDQ==}
+  lru-cache@11.2.7:
+    resolution: {integrity: sha512-aY/R+aEsRelme17KGQa/1ZSIpLpNYYrhcrepKTZgE+W3WM16YMCaPwOHLHsmopZHELU0Ojin1lPVxKR0MihncA==}
     engines: {node: 20 || >=22}
 
   make-dir@4.0.0:
@@ -871,8 +867,8 @@ packages:
     resolution: {integrity: sha512-GYTTew2slBcYdvRHqjhwaaydVMvn/qrGC323+nKclYioNSLTDUM/lGgtGTgyHVtYcozb+XkE8CNhwcraOmZ9Mg==}
     engines: {node: '>=18'}
 
-  package-extract@3.1.5:
-    resolution: {integrity: sha512-Lo1kJZlACEkm7wd/a0H7F1b4aMNgHz9ZT/NEMYDBm25AlK5mp1keYKj2Xfx+UCNjlUFzeXEUbnT8+1a029lDqQ==}
+  package-extract@3.1.6:
+    resolution: {integrity: sha512-B0sfWe3303z79sZal/izcyT2aXnoKx1MHFyVnx22AkQ/vbKwkM2zmyeeGwxFus3bJmiWJ8fOKCKv1m++vdyQTQ==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -984,8 +980,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  simple-git@3.28.0:
-    resolution: {integrity: sha512-Rs/vQRwsn1ILH1oBUy8NucJlXmnnLeLCfcvbSehkPzbv3wwoFWIdtfd6Ndo6ZPhlPsCZ60CPI4rxurnwAa+a2w==}
+  simple-git@3.33.0:
+    resolution: {integrity: sha512-D4V/tGC2sjsoNhoMybKyGoE+v8A60hRawKQ1iFRA1zwuDgGZCBJ4ByOzZ5J8joBbi4Oam0qiPH+GhzmSBwbJng==}
 
   slash@5.1.0:
     resolution: {integrity: sha512-ZA6oR3T/pEyuqwMgAKT0/hAv8oAXckzbkmR0UkUosQ+Mc4RxGoJkRmwHgHufaenlyAgE1Mxgpdcrf75y6XcnDg==}
@@ -1018,8 +1014,8 @@ packages:
     resolution: {integrity: sha512-aulFJcD6YK8V1G7iRB5tigAP4TsHBZZrOV8pjV++zdUwmeV8uzbY7yn6h9MswN62adStNZFuCIx4haBnRuMDaw==}
     engines: {node: '>=18'}
 
-  superc8@12.2.4:
-    resolution: {integrity: sha512-vgwI0imr3bd+uisGYDpyKbC+1ONUHv163DfZR4c4aB8/P4v5SeXx2/03FLPJ6EbRIQsfq/GH4WqCzniKJJzKkw==}
+  superc8@12.3.1:
+    resolution: {integrity: sha512-mQFqVXfTNU3Et5RvD04GP3Z69+SfJEbTsVc6eNSUZe9F1MDnkYxLrSq6IvsA3BcT+yeJhEt9L6oEpcXkhw/34w==}
     engines: {node: '>=22'}
     hasBin: true
     peerDependencies:
@@ -1040,8 +1036,8 @@ packages:
     resolution: {integrity: sha512-g9ljZiwki/LfxmQADO3dEY1CbpmXT5Hm2fJ+QaGKwSXUylMybePR7/67YW7jOrrvjEgL1Fmz5kzyAjWVWLlucg==}
     engines: {node: '>=6'}
 
-  tar@7.5.10:
-    resolution: {integrity: sha512-8mOPs1//5q/rlkNSPcCegA6hiHJYDmSLEI8aMH/CdSQJNWztHC9WHNam5zdQlfpTwB9Xp7IBEsHfV5LKMJGVAw==}
+  tar@7.5.11:
+    resolution: {integrity: sha512-ChjMH33/KetonMTAtpYdgUFr0tbz69Fp2v7zWxQfYZX4g5ZN2nOBXm1R2xyA+lMIKrLKIoKAwFj93jE/avX9cQ==}
     engines: {node: '>=18'}
 
   temp-dir@3.0.0:
@@ -1142,8 +1138,8 @@ packages:
     resolution: {integrity: sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==}
     engines: {node: '>=18'}
 
-  yaml@2.8.0:
-    resolution: {integrity: sha512-4lLa/EcQCB0cJkyts+FpIRx5G/llPxfP6VQU5KByHEhLxY3IJCH0f0Hy1MHI8sClTvsIb8qwRJ6R/ZdlDJ/leQ==}
+  yaml@2.8.2:
+    resolution: {integrity: sha512-mplynKqc1C2hTVYxd0PU2xQAc22TI1vShAYGksCCfxbn/dFwnHTNi1bvYsBTkhdUNtGIf5xNOg938rrSSYvS9A==}
     engines: {node: '>= 14.6'}
     hasBin: true
 
@@ -1182,12 +1178,12 @@ snapshots:
       - eslint
       - typescript
 
-  '@cto.af/monopub@1.2.2':
+  '@cto.af/monopub@1.2.4':
     dependencies:
-      commander: 14.0.0
+      commander: 14.0.3
       fast-glob: 3.3.3
-      simple-git: 3.28.0
-      yaml: 2.8.0
+      simple-git: 3.33.0
+      yaml: 2.8.2
     transitivePeerDependencies:
       - supports-color
 
@@ -1217,6 +1213,13 @@ snapshots:
       '@types/json-schema': 7.0.15
 
   '@eslint/json@1.0.1':
+    dependencies:
+      '@eslint/core': 1.1.1
+      '@eslint/plugin-kit': 0.6.1
+      '@humanwhocodes/momoa': 3.3.10
+      natural-compare: 1.4.0
+
+  '@eslint/json@1.1.0':
     dependencies:
       '@eslint/core': 1.1.1
       '@eslint/plugin-kit': 0.6.1
@@ -1274,7 +1277,7 @@ snapshots:
       node-fetch: 2.7.0
       nopt: 8.1.0
       semver: 7.7.4
-      tar: 7.5.10
+      tar: 7.5.11
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -1304,7 +1307,7 @@ snapshots:
   '@stylistic/eslint-plugin@5.9.0(eslint@10.0.3)':
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@10.0.3)
-      '@typescript-eslint/types': 8.56.1
+      '@typescript-eslint/types': 8.57.1
       eslint: 10.0.3
       eslint-visitor-keys: 4.2.1
       espree: 10.4.0
@@ -1319,11 +1322,11 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@25.3.5':
+  '@types/node@25.5.0':
     dependencies:
       undici-types: 7.18.2
 
-  '@typescript-eslint/types@8.56.1': {}
+  '@typescript-eslint/types@8.57.1': {}
 
   '@vercel/nft@1.3.2':
     dependencies:
@@ -1478,8 +1481,6 @@ snapshots:
     dependencies:
       convert-to-spaces: 2.0.1
 
-  commander@14.0.0: {}
-
   commander@14.0.3: {}
 
   common-path-prefix@3.0.0: {}
@@ -1552,7 +1553,7 @@ snapshots:
   eslint-plugin-ava@16.0.0(eslint@10.0.3):
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@10.0.3)
-      '@eslint/json': 1.0.1
+      '@eslint/json': 1.1.0
       enhance-visitors: 1.0.0
       eslint: 10.0.3
       espree: 11.2.0
@@ -1728,14 +1729,10 @@ snapshots:
 
   flat-cache@4.0.1:
     dependencies:
-      flatted: 3.3.4
+      flatted: 3.4.1
       keyv: 4.5.4
 
-  flatted@3.3.4: {}
-
-  foreground-child@4.0.3:
-    dependencies:
-      signal-exit: 4.1.0
+  flatted@3.4.1: {}
 
   get-caller-file@2.0.5: {}
 
@@ -1879,7 +1876,7 @@ snapshots:
 
   lodash@4.17.23: {}
 
-  lru-cache@11.2.6: {}
+  lru-cache@11.2.7: {}
 
   make-dir@4.0.0:
     dependencies:
@@ -1971,7 +1968,7 @@ snapshots:
       find-up-simple: 1.0.1
       load-json-file: 7.0.1
 
-  package-extract@3.1.5:
+  package-extract@3.1.6:
     dependencies:
       commander: 14.0.3
       semver: 7.7.4
@@ -1986,7 +1983,7 @@ snapshots:
 
   path-scurry@2.0.2:
     dependencies:
-      lru-cache: 11.2.6
+      lru-cache: 11.2.7
       minipass: 7.1.3
 
   picomatch@2.3.1: {}
@@ -2054,7 +2051,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  simple-git@3.28.0:
+  simple-git@3.33.0:
     dependencies:
       '@kwsites/file-exists': 1.1.1
       '@kwsites/promise-deferred': 1.1.1
@@ -2092,12 +2089,12 @@ snapshots:
 
   strip-final-newline@4.0.0: {}
 
-  superc8@12.2.4:
+  superc8@12.3.1:
     dependencies:
       '@bcoe/v8-coverage': 1.0.2
       '@istanbuljs/schema': 0.1.3
+      execa: 9.6.1
       find-up: 8.0.0
-      foreground-child: 4.0.3
       istanbul-lib-coverage: 3.2.2
       istanbul-lib-report: 3.0.1
       istanbul-reports: 3.2.0
@@ -2121,7 +2118,7 @@ snapshots:
 
   tapable@2.3.0: {}
 
-  tar@7.5.10:
+  tar@7.5.11:
     dependencies:
       '@isaacs/fs-minipass': 4.0.1
       chownr: 3.0.0
@@ -2207,7 +2204,7 @@ snapshots:
 
   yallist@5.0.0: {}
 
-  yaml@2.8.0: {}
+  yaml@2.8.2: {}
 
   yargs-parser@22.0.0: {}
 
