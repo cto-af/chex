@@ -1,43 +1,13 @@
 name: Tests
-
 on:
   push:
     branches: [main]
-  pull_request: 
+  pull_request:
     branches: [main]
-
 jobs:
   build:
+    uses: cto-af/workflows/.github/workflows/node-ci.yml@main
+    with:
+      script: ci
+    secrets: inherit
 
-    strategy:
-      matrix:
-        node-version: [20, 22, 24, 25]
-        os: [ubuntu-latest]
-
-    runs-on: ${{ matrix.os }}
-
-    steps:
-      - uses: actions/checkout@v6
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ matrix.node-version }}
-      - uses: pnpm/action-setup@v4
-        with:
-          cache: true
-          run_install: true
-      - name: Check coding standards
-        run: npm run lint
-      - name: Static analysis - check types
-        run: npm run build
-      - name: Test with coverage
-        run: npm run test
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v5
-        with:
-          files: coverage/lcov.info
-          env_vars: OS,NODE
-          name: codecov-umbrella
-          token: ${{ secrets.CODECOV_TOKEN }}
-          fail_ci_if_error: false
-          verbose: true
