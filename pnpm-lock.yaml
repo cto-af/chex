@@ -12,8 +12,8 @@ importers:
         specifier: ^7.0.1
         version: 7.0.1(eslint@10.3.0)(typescript@6.0.3)
       '@cto.af/monopub':
-        specifier: ^1.2.5
-        version: 1.2.5
+        specifier: ^2.0.0
+        version: 2.0.0
       '@types/node':
         specifier: ^25.6.0
         version: 25.6.0
@@ -69,9 +69,9 @@ packages:
     resolution: {integrity: sha512-mmXS+yP21rduDZ7hqQOVkGxUKmCPhC7mFFVdVq95KvzFU+PgwU3f1v+GwK2axqIH4ilg0I0ICUjwyY7/Y34iJA==}
     engines: {node: '>=22'}
 
-  '@cto.af/monopub@1.2.5':
-    resolution: {integrity: sha512-Se2Hbc9ULWLEtWUd59NE6/96gKyT2l2Jzh8qFftrs4A7bKFHNvXtkD0Y6rHFcoxyFV0V3wbtfAtqLC3qleVlmg==}
-    engines: {node: '>=20'}
+  '@cto.af/monopub@2.0.0':
+    resolution: {integrity: sha512-bFOax0unLQ8wdhnouYzUKS/US5JWdeNVylSrIaxlYO1qE+Ou7i1KCSccbLSAdX9iyVfaruD0KEkTQCPEcFj0fg==}
+    engines: {node: '>=22'}
     hasBin: true
 
   '@cto.af/utils@2.0.0':
@@ -1197,8 +1197,8 @@ packages:
     resolution: {integrity: sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==}
     engines: {node: '>=18'}
 
-  yaml@2.8.3:
-    resolution: {integrity: sha512-AvbaCLOO2Otw/lW5bmh9d/WEdcDFdQp2Z2ZUH3pX9U2ihyUY0nvLv7J6TrWowklRGPYbB/IuIMfYgxaCPg5Bpg==}
+  yaml@2.8.4:
+    resolution: {integrity: sha512-ml/JPOj9fOQK8RNnWojA67GbZ0ApXAUlN2UQclwv2eVgTgn7O9gg9o7paZWKMp4g0H3nTLtS9LVzhkpOFIKzog==}
     engines: {node: '>= 14.6'}
     hasBin: true
 
@@ -1237,12 +1237,12 @@ snapshots:
       - eslint
       - typescript
 
-  '@cto.af/monopub@1.2.5':
+  '@cto.af/monopub@2.0.0':
     dependencies:
       commander: 14.0.3
       fast-glob: 3.3.3
       simple-git: 3.36.0
-      yaml: 2.8.3
+      yaml: 2.8.4
     transitivePeerDependencies:
       - supports-color
 
@@ -2316,7 +2316,7 @@ snapshots:
 
   yallist@5.0.0: {}
 
-  yaml@2.8.3: {}
+  yaml@2.8.4: {}
 
   yargs-parser@22.0.0: {}
 
