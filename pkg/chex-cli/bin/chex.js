@@ -3,9 +3,9 @@
 import {Command, Option} from 'commander';
 import {HexDumpTransform} from '@cto.af/chex';
 import fs from 'node:fs';
-import {version as libVersion} from '@cto.af/chex/lib/version.js';
+import lib from '@cto.af/chex/package.json' with {type: 'json'};
+import pkg from '../package.json' with {type: 'json'};
 import {spawn} from 'node:child_process';
-import {version} from '../lib/version.js';
 
 const program = new Command();
 program
@@ -21,7 +21,7 @@ program
     '-s,--strings <encoding>',
     'try to decode strings in this encoding'
   ).choices(['utf8', 'utf-8']))
-  .version(`${version}, lib:${libVersion}`)
+  .version(`${pkg.version}, lib:${lib.version}`)
   .parse();
 
 const opts = program.opts();

@@ -16,7 +16,7 @@ export const LITTLE = (new Uint16Array(
  */
 export function parseEncoding(e) {
   const m = e.match(validEncoding);
-  if (!m) {
+  if (!m?.groups) {
     throw new Error(`Unknown string encoding "${m}"`);
   }
   return {
