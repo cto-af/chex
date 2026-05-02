@@ -15,8 +15,7 @@
   "scripts": {
     "test": "c8 ava",
     "snaps": "ava --update-snapshots",
-    "build": "tsc",
-    "version": "package-extract -s -o lib/version.js && git add lib/version.js"
+    "build": "tsgo"
   },
   "keywords": [
     "hexdump",
@@ -26,14 +25,12 @@
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
   "dependencies": {
-    "@cto.af/utils": "~1.4.2"
+    "@cto.af/utils": "~2.0.0"
   },
   "devDependencies": {
-    "@types/node": "^25.5.0",
-    "package-extract": "^3.1.6",
-    "typescript": "^5.9.3"
+    "@types/node": "^25.6.0"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   }
 }

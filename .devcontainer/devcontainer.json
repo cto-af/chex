@@ -3,9 +3,14 @@
   "image": "mcr.microsoft.com/devcontainers/javascript-node",
   "customizations": {
     "vscode": {
+      "settings": {
+        "js/ts.experimental.useTsgo": true,
+        "typescript.native-preview.tsdk": "/workspaces/ca/node_modules/@typescript/native-preview"
+      },
       "extensions": [
         "dbaeumer.vscode-eslint",
-        "editorconfig.editorconfig"
+        "editorconfig.editorconfig",
+        "typescriptteam.native-preview"
       ]
     }
   },
