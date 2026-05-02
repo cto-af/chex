@@ -5,7 +5,7 @@
     "vscode": {
       "settings": {
         "js/ts.experimental.useTsgo": true,
-        "typescript.native-preview.tsdk": "/workspaces/ca/node_modules/@typescript/native-preview"
+        "typescript.native-preview.tsdk": "/workspaces/chex/node_modules/@typescript/native-preview"
       },
       "extensions": [
         "dbaeumer.vscode-eslint",
