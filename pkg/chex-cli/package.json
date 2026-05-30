@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@cto.af/chex": "3.0.1",
-    "commander": "~14.0.3"
+    "commander": "~15.0.0"
   },
   "devDependencies": {
     "@types/node": "^25.6.0",
