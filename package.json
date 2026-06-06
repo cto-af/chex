@@ -16,6 +16,7 @@
     "test": "c8 ava",
     "snaps": "c8 ava --update-snapshots",
     "build": "pnpm --filter '@cto.af/*' --if-present -r build",
+    "clean": "rm -rf coverage && pnpm run --filter '@cto.af/*' --if-present -r clean",
     "version": "monopub version && pnpm i -r --lockfile-only && git add pnpm-lock.yaml",
     "ci": "npm run build && npm run lint && npm run test"
   },
@@ -27,16 +28,16 @@
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
   "devDependencies": {
-    "@cto.af/eslint-config": "^7.0.1",
+    "@cto.af/eslint-config": "^7.0.2",
     "@cto.af/monopub": "^2.0.0",
-    "@types/node": "^25.6.0",
-    "@typescript/native-preview": "7.0.0-dev.20260502.1",
-    "ava": "^8.0.0",
-    "eslint": "^10.3.0",
-    "eslint-plugin-ava": "^16.0.1",
-    "superc8": "^12.3.1"
+    "@types/node": "^25.9.2",
+    "@typescript/native-preview": "7.0.0-dev.20260606.1",
+    "ava": "^8.0.1",
+    "eslint": "^10.4.1",
+    "eslint-plugin-ava": "^17.0.0",
+    "superc8": "^12.7.0"
   },
-  "packageManager": "pnpm@11.0.3",
+  "packageManager": "pnpm@11.5.2",
   "engines": {
     "node": ">=22"
   }

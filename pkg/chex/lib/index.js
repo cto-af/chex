@@ -1,4 +1,5 @@
 import {parseEncoding, utf16encode} from './encoding.js';
+import {Buffer} from 'node:buffer';
 import {HexDumpTransform} from './stream.js';
 
 export {
@@ -58,5 +59,10 @@ export function hexDump(input, options) {
   const xform = new HexDumpTransform(options);
   const buf = toUint8Array(input, xform.options);
   xform.end(buf);
-  return xform.read().toString();
+  const output = /** @type {Buffer[]} */ ([]);
+  let b = null;
+  while ((b = xform.read())) {
+    output.push(b);
+  }
+  return Buffer.concat(output).toString();
 }
