@@ -16,7 +16,7 @@
     "clean": "rm -rf coverage lib/*.d.ts",
     "test": "c8 ava",
     "snaps": "ava --update-snapshots",
-    "build": "tsgo"
+    "build": "tsc"
   },
   "keywords": [
     "hexdump",
@@ -26,10 +26,10 @@
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
   "dependencies": {
-    "@cto.af/utils": "~2.0.0"
+    "@cto.af/utils": "~2.0.1"
   },
   "devDependencies": {
-    "@types/node": "^25.9.2"
+    "@types/node": "^26.6.3"
   },
   "engines": {
     "node": ">=22"
