@@ -207,7 +207,7 @@ importers:
   pkg/chex-cli:
     dependencies:
       '@cto.af/chex':
-        specifier: 3.0.2
+        specifier: 3.0.3
         version: link:../chex
       commander:
         specifier: ~15.0.0
