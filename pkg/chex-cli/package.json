@@ -30,11 +30,11 @@
   },
   "dependencies": {
     "@cto.af/chex": "3.0.3",
-    "commander": "~15.0.0"
+    "commander": "~15.1.0"
   },
   "devDependencies": {
-    "@types/node": "^26.6.3",
-    "execa": "^10.0.1"
+    "@types/node": "^26.6.6",
+    "execa": "^10.2.1"
   },
   "engines": {
     "node": ">=22"
