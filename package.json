@@ -5,7 +5,7 @@
   "private": "true",
   "type": "module",
   "workspaces": [
-    "./pkg/*"
+    "pkg/*"
   ],
   "repository": {
     "type": "git",
@@ -28,17 +28,18 @@
   "author": "Joe Hildebrand <joe-github@cursive.net>",
   "license": "MIT",
   "devDependencies": {
-    "@cto.af/eslint-config": "^7.0.3",
+    "@cto.af/eslint-config": "^7.0.6",
     "@cto.af/monopub": "^2.0.2",
-    "@types/node": "^26.6.3",
+    "@cto.af/ncurc": "^0.0.3",
+    "@types/node": "^26.6.6",
     "@typescript/native": "npm:typescript@^7.0.2",
-    "ava": "^8.0.1",
-    "eslint": "^10.11.0",
-    "eslint-plugin-ava": "^17.0.1",
+    "ava": "^8.4.0",
+    "eslint": "^10.15.0",
+    "eslint-plugin-ava": "^18.0.0",
     "superc8": "^12.7.0",
     "typescript": "npm:@typescript/typescript6@^6.0.2"
   },
-  "packageManager": "pnpm@12.8.1",
+  "packageManager": "pnpm@12.22.0",
   "engines": {
     "node": ">=22"
   }

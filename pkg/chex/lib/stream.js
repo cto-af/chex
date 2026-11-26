@@ -1,5 +1,7 @@
 import {
-  charMap, dotMap, utf8decode,
+  charMap,
+  dotMap,
+  utf8decode,
 } from './encoding.js';
 import {Transform} from 'node:stream';
 import {select} from '@cto.af/utils';
@@ -129,7 +131,8 @@ export class HexDumpTransform extends Transform {
 
   #count(n) {
     return (this.#offset === 0 ? '' : '\n') + this.#indent + this.#style(
-      n.toString(16).padStart(this.#opts.digits, '0'), 2
+      n.toString(16).padStart(this.#opts.digits, '0'),
+      2
     );
   }
 

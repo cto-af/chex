@@ -1,12 +1,14 @@
 .c8rc.json
 .github/
-.nx/
+.pnpm-store/
 .vscode/
 ava.config.js
 coverage/
 eslint.config.js
 node_modules/
-nx.json
 pnpm-lock.yaml
 test/
 tsconfig.json
+.ncurc.js
+.devcontainer/
+pnpm-workspace.yaml

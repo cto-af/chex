@@ -14,9 +14,11 @@ program
   .option('--no-colors', 'force colors off even if stdout is a tty')
   .option('-C,--columns <number>', 'how many columns of 8 bytes?', 2)
   .option('-d,--dots', 'use dots for more control characters, instead of Unicode representations')
-  .option('-p,--pager [pager command]',
+  .option(
+    '-p,--pager [pager command]',
     'override PAGER environment variable.  If no command is specified, turn off paging.  Suggested: "less -REX".',
-    process.env.PAGER ?? 'more')
+    process.env.PAGER ?? 'more'
+  )
   .addOption(new Option(
     '-s,--strings <encoding>',
     'try to decode strings in this encoding'
